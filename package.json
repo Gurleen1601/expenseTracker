@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "concurrently": "^7.2.0"
+  },
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "Expense Tracker",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gurleen1601/expenseTracker.git"
+  },
+  "author": "Gurleen Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gurleen1601/expenseTracker/issues"
+  },
+  "homepage": "https://github.com/Gurleen1601/expenseTracker#readme"
+}
