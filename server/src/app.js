@@ -3,6 +3,7 @@ const express = require('express');
 
 //importing the database into the server
 const dbConnect = require('./config/dbConnect');
+const errorHandler = require("./middlewares/errorMiddleware");
 const userRoute= require('./routes/users/usersRoutes');
 // using express
 const app = express();
@@ -21,5 +22,8 @@ app.use(express.json());
 
 //middleware to use routes folder
 app.use('/',userRoute);
+
+//error
+app.use(errorHandler);
 
 module.exports=app;

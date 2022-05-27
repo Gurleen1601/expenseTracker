@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "concurrently": "^7.2.0"
+    "concurrently": "^7.2.0",
+    "express-async-handler": "^1.2.0"
   },
   "name": "expense-tracker",
   "version": "1.0.0",
   "description": "Expense Tracker",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "server": "npm run watch --prefix server",
     "client": "npm run start --prefix client",
