@@ -8,9 +8,6 @@ const registerUser= expressAsyncHandler(async (req,res) =>{
    const userExists=await User.findOne({email});
    if(userExists) throw new Error("User already exists");
     try {
-    if(userExists){
-       res.json('User already exists');
-   }
    const user=await User.create({email,firstname,lastname,password});
    res.status(200).json(user);
    }catch(error){
