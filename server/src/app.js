@@ -21,7 +21,7 @@ dbConnect();
 app.use(express.json());
 
 //middleware to use routes folder
-app.use('/',userRoute);
+app.use('/api/users',userRoute);
 
 //error
 app.use(errorHandler);
